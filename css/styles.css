@@ -7,21 +7,30 @@ body{
   left:0;
   background-size: cover;
   background-repeat: no-repeat;
+  /* opacity: 0.9; */
+  color:#F0F0EB;
 }
 
-/* .home{
-  float:left;
+.home{
+  /* float:left; */
   width:50%;
-  border:gray;
-  border-style: ridge;
-  margin-top:200px;
   font-size: 1.25em;
+  /* color:white; */
 }
-.container{
-  
 
+
+h1{
+  text-align: center;
+  text-shadow: #F0F0EB;
 }
-  */
+p{
+  text-align: center;
+  padding-top: 50px;
+}
+
+form{
+  
+}
 
 /* body{
   padding:30px;

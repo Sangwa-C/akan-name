@@ -42,7 +42,7 @@
       
           <button onclick="calculator()">Submit</button>
         </form>
-        <p3 id="aka"></p3>  
+        <!-- <p3 id="aka"></p3>   -->
     </div>
 
     
@@ -76,19 +76,55 @@
        } else if (year === "" || gender === ""){
          alert("please fill all tabs");
        } else {
-        //  alert(name)
-          document.getElementById("aka").innerHTML=Math.round(name);
+        alert(Math.round(name))
+          // document.getElementById("aka").innerHTML=Math.round(name);
        }
       
 
       if(name===0 && gender==="female"){
-          alert("your name is Kosua")
+          alert("you were born on Sunday,your name is Kosua")
         }
         else if (name===0 && gender==="male"){
-          alert("your name is Kwasi")
-        // } else if(name===1 && gender==="female"){
-        //   alert("your name is Adoa")
-        // }
+          alert("you were born on Sunday,your name is Kwasi")
+        } 
+        else if(name===1 && gender==="female"){
+          alert("you were born on Monday,your name is Adoa")
+        }
+         else if (name===1 && gemder==="male"){
+          alert ("you were born on Monday,your name is Kwando")
+        } 
+        else if (name===2 && gender==="female"){
+          alert("you were born on Tuesday,your name is Abenaa")
+        }
+        else if (name===2 && gender==="male"){
+          alert("you were born on Tuesday,your name is Kwabena")
+        } 
+        else if (name===3 && gender==="female"){
+          alert ("your were born on Wednesday, and your name is Akua")
+        } 
+        else  if (name===3 && gender==="male"){
+          alert ("you were born on Wednesday, your name is Kwaku")
+        } 
+        else if (name===4 && gender==="female" ){
+          alert("you were born on Thursday, your name is Yaa")
+        } 
+        else if (name===4 && gender==="male"){
+          alert("you were born on Thursday, your name is Yaw")
+        }
+        else if (name===5 && gender==="female"){
+          alert("you were born on Friday, your name is Afua")
+        }
+        else if (name===5 && gender==="male"){
+          alert("you were born on Friday, your name is Kofi")
+        }
+        else if (name===6 && gender==="female"){
+          alert("you were born on Saturday, your name is Ama")
+        }
+        else if (name===6 && gender==="male"){
+          alert("you were born on Saturday, your name is Kwame")
+        }
+
+
     }
   </script>
 </div>

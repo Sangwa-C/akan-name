@@ -21,6 +21,7 @@ body{
 
 h1{
   text-align: center;
+  text-shadow: black;
   width:50%;
 }
 p{

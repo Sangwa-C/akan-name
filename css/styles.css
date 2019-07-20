@@ -21,7 +21,6 @@ body{
 
 h1{
   text-align: center;
-  text-shadow: #F0F0EB;
   width:50%;
 }
 p{
@@ -58,6 +57,8 @@ label {
   text-align: center;
   padding:13px;
 }
+
+
 
 
 

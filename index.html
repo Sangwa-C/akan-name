@@ -26,7 +26,7 @@
   
   
   <div id="about">
-    <div class = "calculator">
+    <div class = "calculator" >
         <form name= "form" class="form">
           <p1>Fill in all the requirements.</p1><br>
           <label for="date">Date of birth</label><br>
@@ -42,7 +42,10 @@
       
           <button onclick="calculator()">Submit</button>
         </form>
+        <p3 id="aka"></p3>  
     </div>
+
+    
 
   </div>
   <script>
@@ -51,6 +54,10 @@
         var month = document.forms["form"]["month"].value;
         var year = document.forms["form"]["year"].value;
         var gender = document.forms["form"]["gender"].value;
+
+        var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+        var femaleNames =["kosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
+        var days=["Sunday","Monday","Tuesday", "wednesday","Thursday","friday","Satruday"]
     
         var dd=parseInt(date);
         var mm=parseInt(month);
@@ -69,9 +76,20 @@
        } else if (year === "" || gender === ""){
          alert("please fill all tabs");
        } else {
-         alert(Math.round(name));
+        //  alert(name)
+          document.getElementById("aka").innerHTML=Math.round(name);
        }
-      }
+      
+
+      if(name===0 && gender==="female"){
+          alert("your name is Kosua")
+        }
+        else if (name===0 && gender==="male"){
+          alert("your name is Kwasi")
+        // } else if(name===1 && gender==="female"){
+        //   alert("your name is Adoa")
+        // }
+    }
   </script>
 </div>
 

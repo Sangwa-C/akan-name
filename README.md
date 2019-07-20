@@ -8,7 +8,7 @@ BDD. Behavior Please make sure to enter valid gender and birthday date; example:
 
 Technologies Used {1. HTML 2. Bootstrap 3. css 4. js }
 
-Support and contact details {For any inquiries please text on chelseasabinesangwa@gmail.com}
+Support and contact details {For any inquiries please text on chelseasabinesangwa@gmail.com}.
 
 License MIT Copyright (c) Chelsea 2019.
 

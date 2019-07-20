@@ -35,7 +35,7 @@ p{
   padding-right:300px;
   margin-top:100px;
   font-size: 1.5em;
-  
+
 } 
 
 input{
@@ -47,6 +47,17 @@ label {
   display: inline-block;
 }
 
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+  padding:13px;
+}
 
 
 

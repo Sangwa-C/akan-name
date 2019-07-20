@@ -8,21 +8,13 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <div class="conatiner">
-
-    <nav>
-        <ul>
-            <li><a  href="#home">Home</a></li>
-            <li><a href="#about">Calculate</a></li>
-        </ul>
-    </nav>
-
+  <div class="container">
     <div class="home">
         <div>
           <h1>Your akan name</h1>
           <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born.
-              Do you ever wonder what would your name be if were born in Ghana?
-              here is what is best for you; just fill the form bellow, then we will tell you your name!
+              Do you ever wonder what would your name be if were born in Ghana? 
+              here is what is best for you, we will first search what day you were born on, just fill the form correctly , then we will tell you your name!
           </p>
         </div>
     </div>
@@ -34,6 +26,24 @@
   
   
   <div id="about">
+    <div class = "calculator">
+        <form name= "form" class="form">
+          <p>Fill in all the requirements.</p>
+          <label for="date">Date of birth</label><br>
+          <input type="text" name="date"><br>
+        
+          <label for="month">Month of birth</label><br>
+          <input type="text" name="month"> <br>
+          <label for="year">Year of birth</label><br>
+          <input type="text" name="year"><br>
+          <label for="gender">Select you gender</label><br>
+          <input type="radio" name="gender" value="male" > Male<br>
+          <input type="radio" name="gender" value="female" >  Female<br><br>
+      
+          <button onclick="calculator()">Submit</button>
+        </form>
+    </div>
+            
 
   </div>
 </body>

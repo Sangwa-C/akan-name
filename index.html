@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Your akan name</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -14,10 +14,10 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
+  <div class="contain">
     <div class="home">
         <div>
           <h1>Your akan name</h1>
@@ -36,7 +36,7 @@
   
   <div id="about">
     <div class = "calculator" >
-        <form name= "form" class="form">
+        <form name= "form" class="form" >
           <p1>Fill in all the requirements.</p1><br>
           <label for="date">Date of birth</label><br>
           <input type="text" name="date"><br>
@@ -66,7 +66,7 @@
 
         var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
         var femaleNames =["kosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
-        var days=["Sunday","Monday","Tuesday", "wednesday","Thursday","friday","Satruday"]
+        var days=["Sunday","Monday","Tuesday", "wednesday","Thursday","Friday","Satruday"]
     
         var dd=parseInt(date);
         var mm=parseInt(month);
@@ -84,52 +84,47 @@
          alert("please write the correct month");
        } else if (year === "" || gender === ""){
          alert("please fill all tabs");
-       } else {
-        alert(Math.round(name))
-          // document.getElementById("aka").innerHTML=Math.round(name);
        }
-      
-
-      if(name===0 && gender==="female"){
+       else if(Math.round(name)==0 && gender==="female"){
           alert("you were born on Sunday,your name is Kosua")
         }
-        else if (name===0 && gender==="male"){
+        else if (Math.round(name)==0 && gender==="male"){
           alert("you were born on Sunday,your name is Kwasi")
         } 
-        else if(name===1 && gender==="female"){
+        else if(Math.round(name)==1 && gender==="female"){
           alert("you were born on Monday,your name is Adoa")
         }
-         else if (name===1 && gemder==="male"){
+         else if (Math.round(name)==1 && gemder==="male"){
           alert ("you were born on Monday,your name is Kwando")
         } 
-        else if (name===2 && gender==="female"){
+        else if (Math.round(name)==2 && gender==="female"){
           alert("you were born on Tuesday,your name is Abenaa")
         }
-        else if (name===2 && gender==="male"){
+        else if (Math.round(name)==2 && gender==="male"){
           alert("you were born on Tuesday,your name is Kwabena")
         } 
-        else if (name===3 && gender==="female"){
+        else if (Math.round(name)==3 && gender==="female"){
           alert ("your were born on Wednesday, and your name is Akua")
         } 
-        else  if (name===3 && gender==="male"){
+        else  if (Math.round(name)==3 && gender==="male"){
           alert ("you were born on Wednesday, your name is Kwaku")
         } 
-        else if (name===4 && gender==="female" ){
+        else if (Math.round(name)==4 && gender==="female" ){
           alert("you were born on Thursday, your name is Yaa")
         } 
-        else if (name===4 && gender==="male"){
+        else if (Math.round(name)==4 && gender==="male"){
           alert("you were born on Thursday, your name is Yaw")
         }
-        else if (name===5 && gender==="female"){
+        else if (Math.round(name)==5 && gender==="female"){
           alert("you were born on Friday, your name is Afua")
         }
-        else if (name===5 && gender==="male"){
+        else if (Math.round(name)==5 && gender==="male"){
           alert("you were born on Friday, your name is Kofi")
         }
-        else if (name===6 && gender==="female"){
+        else if (Math.round(name)==6 && gender==="female"){
           alert("you were born on Saturday, your name is Ama")
         }
-        else if (name===6 && gender==="male"){
+        else if (Math.round(name)==6 && gender==="male"){
           alert("you were born on Saturday, your name is Kwame")
         }
         else{

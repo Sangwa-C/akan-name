@@ -7,13 +7,13 @@ body{
   left:0;
   background-size: cover;
   background-repeat: no-repeat;
-  /* opacity: 0.9; */
+ 
   color:#F0F0EB;
 }
 
 .home{
   /* float:left; */
-  width:50%;
+  
   font-size: 1.25em;
   /* color:white; */
 }
@@ -22,23 +22,22 @@ body{
 h1{
   text-align: center;
   text-shadow: #F0F0EB;
+  width:50%;
 }
 p{
   text-align: center;
   padding-top: 50px;
+  width:50%;
 }
 
-form{
+.form{
+  padding-left:300px;
+  padding-right:300px;
+  margin-top:100px;
+  font-size: 1.5em;
   
-}
+} 
 
-/* body{
-  padding:30px;
-}
-
-h1{
-  text-align: center;
-}
 input{
   border-radius: 10px;
   padding: 6px 12px;
@@ -47,11 +46,9 @@ label {
   padding: 12px 12px 12px;
   display: inline-block;
 }
-.form{
-  padding-left:300px;
-  padding-right:300px;
-  margin-top:100px;
-} */
+
+
+
 
 
 

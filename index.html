@@ -43,9 +43,31 @@
           <button onclick="calculator()">Submit</button>
         </form>
     </div>
-            
 
   </div>
+  <script>
+      function calculator(form){
+        var date = document.forms["form"]["date"].value;
+        var month = document.forms["form"]["month"].value;
+        var year = document.forms["form"]["year"].value;
+        var gender = document.forms["form"]["gender"].value;
+    
+        
+    
+        if (date==="" || month === "" || year ===""){
+         alert("please fill all the tabs");
+       } else if(date<1 || date>31) {
+         alert("please fill in the correct answers!");
+       } else if (month<1 || month>12){
+         alert("please write the correct month");
+       } else if (year === "" || gender === ""){
+         alert("please fill all tabs");
+       } else {
+         alert(Math.round(name));
+       }
+      }
+  </script>
+</div>
 </body>
 </html>
   

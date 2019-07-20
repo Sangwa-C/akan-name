@@ -1,0 +1,66 @@
+body{
+  background-image:url("https://www.allthetests.com/quiz31/picture/pic_1403898268_1.jpg");
+  Position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color:#F0F0EB;
+}
+
+.home{
+  /* float:left; */
+  
+  font-size: 1.25em;
+  /* color:white; */
+}
+
+
+h1{
+  text-align: center;
+  text-shadow: black;
+  width:50%;
+}
+p{
+  text-align: center;
+  padding-top: 50px;
+  width:50%;
+}
+
+.form{
+  padding-left:300px;
+  padding-right:300px;
+  margin-top:100px;
+  font-size: 1.5em;
+
+} 
+
+input{
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+label {
+  padding: 12px 12px 12px;
+  display: inline-block;
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:black;
+  color: white;
+  text-align: center;
+  padding:13px;
+}
+
+
+
+
+
+
+

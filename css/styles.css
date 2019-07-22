@@ -22,9 +22,16 @@ h1{
   text-align: center;
   text-shadow: black;
   width:50%;
+<<<<<<< HEAD
 }
 p{
   text-align: center;
+=======
+  text-shadow: 3px 3px #5F5F54   ;
+}
+p{
+  text-align: justify;
+>>>>>>> 3965263bd56ad6f8c4477bb0d971a866de362981
   padding-top: 50px;
   width:50%;
 }
@@ -56,6 +63,10 @@ label {
   color: white;
   text-align: center;
   padding:13px;
+<<<<<<< HEAD
+=======
+  font-size: 1.5em;
+>>>>>>> 3965263bd56ad6f8c4477bb0d971a866de362981
 }
 
 

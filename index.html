@@ -39,15 +39,15 @@
        
           <p1>Fill in all the requirements.</p1><br>
           <label for="date">Date of birth</label><br>
-          <input type="text" name="date" id ="date"><br>
+          <input type="text" name="date" id ="date" required><br>
         
           <label for="month">Month of birth</label><br>
-          <input type="text" name="month" id ="month"> <br>
+          <input type="text" name="month" id ="month" required> <br>
           <label for="year">Year of birth</label><br>
-          <input type="text" name="year" id="year"><br>
-          <label for="gender">Select you gender</label><br>
-          <input type="radio" name="gender" value="male" id="gender" > Male<br>
-          <input type="radio" name="gender" value="female"  >  Female<br><br>
+          <input type="text" name="year" id="year" required><br>
+          <label for="gender">Select your gender</label><br>
+          <input type="radio" name="gender" value="male" id="gender" style="color:#F0F0EB !important"> Male<br>
+          <input type="radio" name="gender" value="female" style="color:#F0F0EB !important" >  Female<br><br>
       
           <button onclick="calculator()" style="color:#0B0B01">Submit</button><br><br>
        
@@ -91,7 +91,10 @@
          alert("please fill in the correct answers!");
        } else if (month<1 || month>12){
          alert("please write the correct month");
-       } else if (year === "" || gender === ""){
+       } else if(mm==2 && dd >29 && yy%4==o){
+         alert("Invalid date")
+       }
+       else if (year === "" || gender === ""){
          alert("please fill all tabs");
        }
        else if(Math.round(name)==0 && gender==="female"){

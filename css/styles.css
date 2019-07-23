@@ -7,14 +7,22 @@ body{
   left:0;
   background-size: cover;
   background-repeat: no-repeat;
-  color:#F0F0EB;
+  
 }
 
 .home{
   /* float:left; */
-  
+  color:#F0F0EB;
   font-size: 1.25em;
   /* color:white; */
+}
+
+label{
+  color:#F0F0EB;
+}
+
+p1{
+  color:#F0F0EB;
 }
 
 
@@ -56,6 +64,10 @@ label {
   color: white;
   text-align: center;
   padding:13px;
+}
+
+input{
+  color: black;
 }
 
 

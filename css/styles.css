@@ -7,14 +7,22 @@ body{
   left:0;
   background-size: cover;
   background-repeat: no-repeat;
-  color:#F0F0EB;
+  
 }
 
 .home{
   /* float:left; */
-  
+  color:#F0F0EB;
   font-size: 1.25em;
   /* color:white; */
+}
+
+label{
+  color:#F0F0EB;
+}
+
+p1{
+  color:#F0F0EB;
 }
 
 
@@ -31,7 +39,7 @@ p{
   width:50%;
 }
 
-.form{
+#calculator{
   padding-left:300px;
   padding-right:300px;
   margin-top:100px;
@@ -59,6 +67,10 @@ label {
   text-align: center;
   padding:13px;
 
+}
+
+input{
+  color: black;
 }
 
 

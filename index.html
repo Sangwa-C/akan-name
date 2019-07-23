@@ -37,24 +37,23 @@
   
   
   <div id="about">
-    <div class = "calculator" >
-        <form name= "form" class="form" >
+    <div id = "calculator" name= "form"  >
+       
           <p1>Fill in all the requirements.</p1><br>
           <label for="date">Date of birth</label><br>
-          <input type="text" name="date"><br>
+          <input type="text" name="date" id ="date" required><br>
         
           <label for="month">Month of birth</label><br>
-          <input type="text" name="month"> <br>
+          <input type="text" name="month" id ="month" required> <br>
           <label for="year">Year of birth</label><br>
-          <input type="text" name="year"><br>
-          <label for="gender">Select you gender</label><br>
-          <input type="radio" name="gender" value="male" > Male<br>
-          <input type="radio" name="gender" value="female" >  Female<br><br>
-
-          <button onclick="calculator()" style="color:#0B0B01">Submit</button>
-
-        </form>
-        <!-- <p3 id="aka"></p3>   -->
+          <input type="text" name="year" id="year" required><br>
+          <label for="gender">Select your gender</label><br>
+          <input type="radio" name="gender" value="male" id="gender" style="color:#F0F0EB !important"> Male<br>
+          <input type="radio" name="gender" value="female" style="color:#F0F0EB !important" >  Female<br><br>
+      
+          <button onclick="calculator()" style="color:#0B0B01">Submit</button><br><br>
+       
+        <p3 id="name"></p3>  
     </div>
 
     
@@ -62,10 +61,10 @@
   </div>
   <script>
       function calculator(form){
-        var date = document.forms["form"]["date"].value;
-        var month = document.forms["form"]["month"].value;
-        var year = document.forms["form"]["year"].value;
-        var gender = document.forms["form"]["gender"].value;
+        var date = document.getElementById("date").value;
+        var month = document.getElementById("month").value;
+        var year = document.getElementById("year").value;
+        // var gender = document.getElementById("gender").value;
 
         var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
         var femaleNames =["kosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
@@ -78,6 +77,15 @@
         var name=( ( (cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd ) % 7;
          //(math.round(name)
 
+         if(document.getElementById("gender").checked)
+         {
+           var gender='male';
+         }
+         else
+         {
+           var gender='female'
+         }
+
     
         if (date==="" || month === "" || year ===""){
          alert("please fill all the tabs");
@@ -85,53 +93,56 @@
          alert("please fill in the correct answers!");
        } else if (month<1 || month>12){
          alert("please write the correct month");
-       } else if (year === "" || gender === ""){
+       } else if(mm==2 && dd >29 && yy%4==o){
+         alert("Invalid date")
+       }
+       else if (year === "" || gender === ""){
          alert("please fill all tabs");
        }
        else if(Math.round(name)==0 && gender==="female"){
-          alert("you were born on Sunday,your name is Kosua")
+          document.getElementById("name").innerHTML=("You were born on Sunday,your name is Kosua!")
         }
         else if (Math.round(name)==0 && gender==="male"){
-          alert("you were born on Sunday,your name is Kwasi")
+          document.getElementById("name").innerHTML=("You were born on Sunday,your name is Kwasi!")
         } 
         else if(Math.round(name)==1 && gender==="female"){
-          alert("you were born on Monday,your name is Adoa")
+          document.getElementById("name").innerHTML=("You were born on Monday,your name is Adoa!")
         }
          else if (Math.round(name)==1 && gemder==="male"){
-          alert ("you were born on Monday,your name is Kwando")
+          document.getElementById("name").innerHTML= ("You were born on Monday,your name is Kwando!")
         } 
         else if (Math.round(name)==2 && gender==="female"){
-          alert("you were born on Tuesday,your name is Abenaa")
+          document.getElementById("name").innerHTML=("You were born on Tuesday,your name is Abenaa!")
         }
         else if (Math.round(name)==2 && gender==="male"){
-          alert("you were born on Tuesday,your name is Kwabena")
+          document.getElementById("name").innerHTML=("You were born on Tuesday,your name is Kwabena!")
         } 
         else if (Math.round(name)==3 && gender==="female"){
-          alert ("your were born on Wednesday, and your name is Akua")
+          document.getElementById("name").innerHTML= ("You were born on Wednesday, and your name is Akua!")
         } 
         else  if (Math.round(name)==3 && gender==="male"){
-          alert ("you were born on Wednesday, your name is Kwaku")
+          document.getElementById("name").innerHTML= ("You were born on Wednesday, your name is Kwaku!")
         } 
         else if (Math.round(name)==4 && gender==="female" ){
-          alert("you were born on Thursday, your name is Yaa")
+          document.getElementById("name").innerHTML=("You were born on Thursday, your name is Yaa!")
         } 
         else if (Math.round(name)==4 && gender==="male"){
-          alert("you were born on Thursday, your name is Yaw")
+          document.getElementById("name").innerHTML=("You were born on Thursday, your name is Yaw!")
         }
         else if (Math.round(name)==5 && gender==="female"){
-          alert("you were born on Friday, your name is Afua")
+          document.getElementById("name").innerHTML=("You were born on Friday, your name is Afua!")
         }
         else if (Math.round(name)==5 && gender==="male"){
-          alert("you were born on Friday, your name is Kofi")
+          document.getElementById("name").innerHTML=("You were born on Friday, your name is Kofi!")
         }
         else if (Math.round(name)==6 && gender==="female"){
-          alert("you were born on Saturday, your name is Ama")
+          document.getElementById("name").innerHTML=("You were born on Saturday, your name is Ama!")
         }
         else if (Math.round(name)==6 && gender==="male"){
-          alert("you were born on Saturday, your name is Kwame")
+          document.getElementById("name").innerHTML=("You were born on Saturday, your name is Kwame!")
         }
         else{
-          alert("The data entered are wrong!")
+          document.getElementById("name").innerHTML=("The data entered are wrong!")
         }
 
 

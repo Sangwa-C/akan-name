@@ -38,7 +38,9 @@ function calculator(form) {
       alert("please write the correct month");
     } else if (mm == 2 && dd > 29 && yy % 4 == o) {
       alert("Invalid date")
-    } else if (year === "" || gender === "") {
+    } else if (yy < 1) {
+        alert("the Year isn't correct");
+    }else if (year === "" || gender === "") {
       alert("please fill all tabs");
     } else if (Math.round(name) == 0 && gender === "female") {
       document.getElementById("name").innerHTML = ("You were born on Sunday,your name is Kosua!")
